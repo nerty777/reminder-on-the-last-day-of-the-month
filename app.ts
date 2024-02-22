@@ -7,7 +7,7 @@ dotenv.config();
 const TELEGRAM_BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 const TELEGRAM_BOT_MESSAGE = process.env.TELEGRAM_BOT_MESSAGE;
-const CRON_RULE = process.env.TELEGRAM_CHAT_ID;
+const CRON_RULE = process.env.CRON_RULE;
 
 if (
   !TELEGRAM_BOT_TOKEN ||
