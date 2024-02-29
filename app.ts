@@ -20,6 +20,7 @@ if (
 
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 
+console.log("today: ", new Date());
 schedule.scheduleJob(CRON_RULE, () => {
   const today = new Date();
   const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
