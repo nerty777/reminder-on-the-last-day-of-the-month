@@ -20,11 +20,11 @@ if (
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 
 export default async function handler() {
-  const today = new Date();
-  const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
-  const isLastDayOfMonthToday = today.getDate() === lastDayOfMonth.getDate();
+  // const today = new Date();
+  // const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
+  // const isLastDayOfMonthToday = today.getDate() === lastDayOfMonth.getDate();
 
-  if (isLastDayOfMonthToday && TELEGRAM_CHAT_ID && TELEGRAM_BOT_MESSAGE) {
+  if (TELEGRAM_CHAT_ID && TELEGRAM_BOT_MESSAGE) {
     bot.sendMessage(TELEGRAM_CHAT_ID, TELEGRAM_BOT_MESSAGE);
   }
 }
