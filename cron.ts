@@ -20,7 +20,8 @@ if (
 const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 
 export default async function handler() {
-  // const today = new Date();
+  const today = new Date();
+  console.log("today: ", today);
   // const lastDayOfMonth = new Date(today.getFullYear(), today.getMonth() + 1, 0);
   // const isLastDayOfMonthToday = today.getDate() === lastDayOfMonth.getDate();
 
