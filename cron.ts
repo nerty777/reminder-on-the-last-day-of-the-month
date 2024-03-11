@@ -29,3 +29,5 @@ export default async function handler() {
     bot.sendMessage(TELEGRAM_CHAT_ID, TELEGRAM_BOT_MESSAGE);
   }
 }
+
+// handler();
