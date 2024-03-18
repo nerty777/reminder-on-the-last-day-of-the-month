@@ -3,27 +3,28 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "vercel-build": "yarn && yarn build ",
     "build": "rimraf dist && tsc",
-    "start": "node ./dist/cron.js",
+    "start": "node ./app.js",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.11.25",
+    "@types/node": "^20.11.28",
     "@types/node-schedule": "^2.1.6",
-    "@types/node-telegram-bot-api": "^0.64.3",
-    "@typescript-eslint/eslint-plugin": "^7.1.1",
-    "@typescript-eslint/parser": "^7.1.1",
+    "@types/node-telegram-bot-api": "^0.64.4",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
     "eslint": "^8.57.0",
     "typescript": "^5.4.2"
   },
   "dependencies": {
     "node-schedule": "^2.1.1",
     "dotenv": "^16.4.5",
-    "node-telegram-bot-api": "^0.64.0"
+    "node-telegram-bot-api": "^0.65.1"
   }
 }

@@ -1,6 +1,6 @@
 // import * as schedule from "node-schedule";
 import dotenv from "dotenv";
-// import TelegramBot from "node-telegram-bot-api";
+import TelegramBot from "node-telegram-bot-api";
 
 dotenv.config();
 
@@ -18,7 +18,7 @@ if (
   throw new Error("failed .env");
 }
 
-// const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
+const bot = new TelegramBot(TELEGRAM_BOT_TOKEN);
 
 // console.log("today: ", new Date());
 // schedule.scheduleJob(CRON_RULE, () => {
@@ -27,6 +27,6 @@ if (
 //   const isLastDayOfMonthToday = today.getDate() === lastDayOfMonth.getDate();
 
 //   if (isLastDayOfMonthToday) {
-//     bot.sendMessage(TELEGRAM_CHAT_ID, TELEGRAM_BOT_MESSAGE);
+bot.sendMessage(TELEGRAM_CHAT_ID, TELEGRAM_BOT_MESSAGE);
 //   }
 // });
